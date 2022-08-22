@@ -25,11 +25,11 @@ export class LandingComponent {
   //     address: ['', Validators.required],
   //   });
   // }
-  ngOnInit() {
-    // this.taskForm = new FormGroup({
-    //   fname: new FormControl('angular@gmail.com'),
-    // });
-  }
+  // ngOnInit() {
+  //   // this.taskForm = new FormGroup({
+  //   //   fname: new FormControl('angular@gmail.com'),
+  //   // });
+  // }
   // onSubmit() {
   //   if (this.taskForm.valid) {
   //     console.log('Form Submitted!');
