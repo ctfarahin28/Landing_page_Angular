@@ -6,15 +6,12 @@ import { LandingComponent } from './landing.component';
 const routes: Routes = [
   {
     path: '',
-    component: LandingComponent
-  }
-]
+    component: LandingComponent,
+  },
+];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [LandingComponent]
+  imports: [CommonModule, RouterModule.forChild(routes)],
+  declarations: [LandingComponent],
 })
-export class LandingModule { }
+export class LandingModule {}
