@@ -76,7 +76,7 @@
     </head>
     <body>
       <div class="container">
-        <form formGroup="taskForm">
+        <form formGroup="taskForm" (ngSubmit)="onSubmit()">
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
@@ -84,9 +84,10 @@
             <div class="col-75">
               <input
                 type="text"
-                
+                class="form-control"
+                id="name"
+                placeholder="Enter full name"
                 formControlName="fname"
-                placeholder="Your name.."
               />
             </div>
           </div>
@@ -97,10 +98,10 @@
             <div class="col-75">
               <input
                 type="text"
-                id="lname"
-                name="lastname"
+                class="form-control"
+                id="name"
+                placeholder="Enter full name"
                 formControlName="lname"
-                placeholder="Your last name.."
               />
             </div>
           </div>
@@ -122,16 +123,16 @@
             </div>
             <div class="col-75">
               <textarea
+                class="form-control"
+                id="email"
                 formControlName="subject"
-                id="subject"
-                name="subject"
                 placeholder="Write something.."
                 style="height:200px"
               ></textarea>
             </div>
           </div>
           <div class="row">
-            <input type="submit" value="Submit" />
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>

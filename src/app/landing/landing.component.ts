@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-landing',
@@ -7,6 +12,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./landing.component.css'],
 })
 export class LandingComponent {
+  taskForm;
+  fname;
   // title = 'Angular Form Validation Tutorial';
   // angForm: FormGroup;
   // constructor(private fb: FormBuilder) {
@@ -17,5 +24,27 @@ export class LandingComponent {
   //     name: ['', Validators.required],
   //     address: ['', Validators.required],
   //   });
+  // }
+  ngOnInit() {
+    // this.taskForm = new FormGroup({
+    //   fname: new FormControl('angular@gmail.com'),
+    // });
+  }
+  // onSubmit() {
+  //   if (this.taskForm.valid) {
+  //     console.log('Form Submitted!');
+  //     this.taskForm.reset();
+  //   }
+  // }
+
+  // constructor(private formBuilder: FormBuilder) {
+  //   this.taskForm = this.formBuilder.group({
+  //     fname: '',
+  //     lname: '',
+  //   });
+  // }
+
+  // onSubmit(formData) {
+  //   var name = formData['name'];
   // }
 }
